@@ -2,21 +2,20 @@
 
 name = "leveldb"
 version = "0.8.6"
-authors = [ "Florian Gilcher <florian.gilcher@asquera.de>" ]
+authors = [ "Florian Gilcher <florian.gilcher@asquera.de>","fancyflame <fancyflame@163.com" ]
 
-description = "An interface for leveldb"
+description = "An interface for leveldb with zlib support for Minecraft"
 
 license = "MIT"
 readme = "README.md"
 
 documentation = "http://skade.github.io/leveldb/"
-homepage = "https://github.com/skade/leveldb"
-repository = "https://github.com/skade/leveldb"
+homepage = "https://github.com/Fancyflame/leveldb-mcpe"
+repository = "https://github.com/Fancyflame/leveldb-mcpe"
 
 autotests = false
 
 [features]
-default = ["leveldb-sys/snappy"]
 
 [lib]
 
@@ -27,8 +26,9 @@ name = "leveldb"
 db-key = "0.0.5"
 libc = "0.2.4"
 
-[dependencies.leveldb-sys]
-version = "2.0.0"
+[dependencies.leveldb-mcpe-sys]
+path="../leveldb-mcpe-sys" #暂时这样
+version = "*"
 
 [dev-dependencies]
 tempdir = "0.3.4"
