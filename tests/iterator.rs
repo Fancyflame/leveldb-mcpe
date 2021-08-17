@@ -1,7 +1,7 @@
 use utils::{open_database,tmpdir,db_put_simple};
-use leveldb::iterator::Iterable;
-use leveldb::iterator::LevelDBIterator;
-use leveldb::options::{ReadOptions};
+use leveldb_mcpe::iterator::Iterable;
+use leveldb_mcpe::iterator::LevelDBIterator;
+use leveldb_mcpe::options::{ReadOptions};
 
 #[test]
 fn test_iterator() {
@@ -81,7 +81,7 @@ fn test_key_iterator() {
   db_put_simple(database, 1, &[1]);
   db_put_simple(database, 2, &[2]);
 
-  let iterable: &mut Iterable<i32> = database;
+  let iterable: &mut dyn Iterable<i32> = database;
 
   let read_opts = ReadOptions::new();
   let mut iter = iterable.keys_iter(read_opts);
@@ -96,7 +96,7 @@ fn test_value_iterator() {
   db_put_simple(database, 1, &[1]);
   db_put_simple(database, 2, &[2]);
 
-  let iterable: &mut Iterable<i32> = database;
+  let iterable: &mut dyn Iterable<i32> = database;
 
   let read_opts = ReadOptions::new();
   let mut iter = iterable.value_iter(read_opts);

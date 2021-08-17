@@ -169,7 +169,7 @@ pub unsafe fn c_readoptions<'a, K>(options: &ReadOptions<'a, K>) -> *mut leveldb
     leveldb_readoptions_set_verify_checksums(c_readoptions, options.verify_checksums as u8);
     leveldb_readoptions_set_fill_cache(c_readoptions, options.fill_cache as u8);
 
-    if let Some(ref snapshot) = options.snapshot {
+    if let Some(snapshot) = options.snapshot {
         leveldb_readoptions_set_snapshot(c_readoptions, snapshot.raw_ptr());
     }
     c_readoptions

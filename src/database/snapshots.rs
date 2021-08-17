@@ -50,11 +50,11 @@ impl<K: Key> Snapshots<K> for Database<K> {
         let snap = unsafe { leveldb_create_snapshot(db_ptr) };
 
         let raw = RawSnapshot {
-            db_ptr: db_ptr,
+            db_ptr,
             ptr: snap,
         };
         Snapshot {
-            raw: raw,
+            raw,
             database: self,
         }
     }

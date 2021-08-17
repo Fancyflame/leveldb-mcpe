@@ -89,14 +89,11 @@ impl<K: Key> Database<K> {
            options: Options,
            comparator: Option<*mut leveldb_comparator_t>)
            -> Database<K> {
-        let raw_comp = match comparator {
-            Some(p) => Some(RawComparator { ptr: p }),
-            None => None,
-        };
+        let raw_comp = comparator.map(|p| RawComparator { ptr: p });
         Database {
             database: RawDB { ptr: database },
             comparator: raw_comp,
-            options: options,
+            options,
             marker: PhantomData,
         }
     }

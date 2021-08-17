@@ -1,6 +1,6 @@
 use utils::{tmpdir};
-use leveldb::database::{Database};
-use leveldb::options::{Options};
+use leveldb_mcpe::database::{Database};
+use leveldb_mcpe::options::{Options};
 
 #[test]
 fn test_create_options() {

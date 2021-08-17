@@ -1,7 +1,7 @@
 use utils::{open_database,tmpdir,db_put_simple};
-use leveldb::snapshots::Snapshots;
-use leveldb::options::{ReadOptions};
-use leveldb::iterator::{Iterable};
+use leveldb_mcpe::snapshots::Snapshots;
+use leveldb_mcpe::options::{ReadOptions};
+use leveldb_mcpe::iterator::{Iterable};
 
 #[test]
 fn test_snapshots() {

@@ -1,5 +1,5 @@
-use leveldb::management::*;
-use leveldb::options::*;
+use leveldb_mcpe::management::*;
+use leveldb_mcpe::options::*;
 use utils::{open_database,tmpdir};
 
 #[test]

@@ -1,6 +1,6 @@
-use leveldb::database::Database;
-use leveldb::database::kv::{KV};
-use leveldb::options::{Options,WriteOptions};
+use leveldb_mcpe::database::Database;
+use leveldb_mcpe::database::kv::{KV};
+use leveldb_mcpe::options::{Options,WriteOptions};
 use std::path::Path;
 use tempdir::TempDir;
 use key::Key;
@@ -22,7 +22,7 @@ pub fn tmpdir(name: &str) -> TempDir {
 pub fn db_put_simple<K: Key + Ord>(database: &Database<K>, key: K, val: &[u8]) {
   let write_opts = WriteOptions::new();
   match database.put(write_opts, key, val) {
-    Ok(_) => { () },
+    Ok(_) => {  },
     Err(e) => { panic!("failed to write to database: {:?}", e) }
   }
 }

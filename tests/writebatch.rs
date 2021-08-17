@@ -1,8 +1,8 @@
 use utils::{tmpdir};
-use leveldb::database::{Database};
-use leveldb::options::{Options,ReadOptions,WriteOptions};
-use leveldb::database::kv::{KV};
-use leveldb::database::batch::{Batch,Writebatch,WritebatchIterator};
+use leveldb_mcpe::database::{Database};
+use leveldb_mcpe::options::{Options,ReadOptions,WriteOptions};
+use leveldb_mcpe::database::kv::{KV};
+use leveldb_mcpe::database::batch::{Batch,Writebatch,WritebatchIterator};
 
 #[test]
 fn test_writebatch() {
@@ -49,12 +49,12 @@ impl WritebatchIterator for Iter {
     fn put(&mut self,
            _key: i32,
            _value: &[u8]) {
-        self.put = self.put + 1;
+        self.put += 1;
     }
 
     fn deleted(&mut self,
                _key: i32) {
-        self.deleted = self.deleted + 1;
+        self.deleted += 1;
     }
 }
 

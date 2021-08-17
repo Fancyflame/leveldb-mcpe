@@ -1,6 +1,6 @@
 use utils::{tmpdir,open_database};
-use leveldb::options::{Options,WriteOptions};
-use leveldb::database::kv::KV;
+use leveldb_mcpe::options::{Options,WriteOptions};
+use leveldb_mcpe::database::kv::KV;
 
 #[test]
 fn access_from_threads() {

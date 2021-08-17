@@ -62,7 +62,7 @@ impl<K: Key> Writebatch<K> {
     /// Create a new writebatch
     pub fn new() -> Writebatch<K> {
         let ptr = unsafe { leveldb_writebatch_create() };
-        let raw = RawWritebatch { ptr: ptr };
+        let raw = RawWritebatch { ptr };
         Writebatch {
             writebatch: raw,
             marker: PhantomData,

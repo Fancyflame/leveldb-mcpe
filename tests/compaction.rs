@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod compaction {
      use utils::{open_database,tmpdir,db_put_simple};
-     use leveldb::compaction::Compaction;
+     use leveldb_mcpe::compaction::Compaction;
 
     #[test]
     fn test_iterator_from_to() {

@@ -3,10 +3,10 @@ mod comparator {
   use libc::c_char;
   use key::Key;
   use utils::{tmpdir, db_put_simple};
-  use leveldb::database::{Database};
-  use leveldb::iterator::Iterable;
-  use leveldb::options::{Options,ReadOptions};
-  use leveldb::comparator::{Comparator,OrdComparator};
+  use leveldb_mcpe::database::{Database};
+  use leveldb_mcpe::iterator::Iterable;
+  use leveldb_mcpe::options::{Options,ReadOptions};
+  use leveldb_mcpe::comparator::{Comparator,OrdComparator};
   use std::cmp::Ordering;
   use std::marker::PhantomData;
   

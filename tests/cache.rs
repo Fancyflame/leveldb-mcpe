@@ -1,7 +1,7 @@
 use utils::{tmpdir};
-use leveldb::database::{Database};
-use leveldb::options::{Options};
-use leveldb::database::cache::{Cache};
+use leveldb_mcpe::database::{Database};
+use leveldb_mcpe::options::{Options};
+use leveldb_mcpe::database::cache::{Cache};
 
 #[test]
 fn test_open_database_with_cache() {

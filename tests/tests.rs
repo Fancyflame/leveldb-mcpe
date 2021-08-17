@@ -1,5 +1,5 @@
 extern crate db_key as key;
-extern crate leveldb;
+extern crate leveldb_mcpe;
 extern crate tempdir;
 extern crate libc;
 
