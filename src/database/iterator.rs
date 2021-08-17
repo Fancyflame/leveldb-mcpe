@@ -2,7 +2,7 @@
 //!
 //! Iteration is one of the most important parts of leveldb. This module provides
 //! Iterators to iterate over key, values and pairs of both.
-use leveldb_sys::{leveldb_iterator_t, leveldb_iter_seek_to_first, leveldb_iter_destroy,
+use leveldb_mcpe_sys::{leveldb_iterator_t, leveldb_iter_seek_to_first, leveldb_iter_destroy,
                   leveldb_iter_seek_to_last, leveldb_create_iterator, leveldb_iter_valid,
                   leveldb_iter_next, leveldb_iter_prev, leveldb_iter_key, leveldb_iter_value,
                   leveldb_readoptions_destroy, leveldb_iter_seek};

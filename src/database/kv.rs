@@ -8,7 +8,7 @@ use database::key::Key;
 use std::ptr;
 use std::borrow::Borrow;
 use libc::{c_char, size_t};
-use leveldb_sys::*;
+use leveldb_mcpe_sys::*;
 use super::bytes::Bytes;
 
 /// Key-Value-Access to the leveldb database, providing

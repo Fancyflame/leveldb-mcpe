@@ -44,9 +44,9 @@
 #![deny(missing_docs)]
 
 extern crate libc;
-extern crate leveldb_sys;
+extern crate leveldb_mcpe_sys;
 
-use leveldb_sys::{leveldb_major_version, leveldb_minor_version};
+use leveldb_mcpe_sys::{leveldb_major_version, leveldb_minor_version};
 pub use database::options;
 pub use database::error;
 pub use database::iterator;

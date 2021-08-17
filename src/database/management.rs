@@ -6,7 +6,7 @@ use std::ptr;
 use std::path::Path;
 use libc::c_char;
 
-use leveldb_sys::{leveldb_destroy_db, leveldb_repair_db};
+use leveldb_mcpe_sys::{leveldb_destroy_db, leveldb_repair_db};
 
 /// destroy a database. You shouldn't hold a handle on the database anywhere at that time.
 pub fn destroy(name: &Path, options: Options) -> Result<(), Error> {

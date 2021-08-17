@@ -1,6 +1,6 @@
 //! Module providing write batches
 
-use leveldb_sys::*;
+use leveldb_mcpe_sys::*;
 use libc::{c_char, size_t, c_void};
 use std::marker::PhantomData;
 use database::key::Key;
