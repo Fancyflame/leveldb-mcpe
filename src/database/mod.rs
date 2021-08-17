@@ -2,7 +2,7 @@
 //! a key-value basis.
 extern crate db_key as key;
 
-use leveldb_sys::*;
+use leveldb_mcpe_sys::*;
 
 use self::options::{Options, c_options};
 use self::error::Error;

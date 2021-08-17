@@ -1,6 +1,6 @@
 [package]
 
-name = "leveldb"
+name = "leveldb-mcpe"
 version = "0.8.6"
 authors = [ "Florian Gilcher <florian.gilcher@asquera.de>","fancyflame <fancyflame@163.com" ]
 
@@ -18,8 +18,7 @@ autotests = false
 [features]
 
 [lib]
-
-name = "leveldb"
+name = "leveldb-mcpe"
 
 [dependencies]
 
