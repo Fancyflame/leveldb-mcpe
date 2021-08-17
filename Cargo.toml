@@ -17,13 +17,9 @@ autotests = false
 
 [features]
 
-[lib]
-name = "leveldb-mcpe"
-
 [dependencies]
-
 db-key = "0.0.5"
-libc = "0.2.4"
+libc = "0"
 
 [dependencies.leveldb-mcpe-sys]
 path="../leveldb-mcpe-sys" #暂时这样

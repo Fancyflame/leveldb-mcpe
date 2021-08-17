@@ -5,6 +5,7 @@
 //! * `ReadOptions`: used when reading from leveldb
 //! * `WriteOptions`: used when writng to leveldb
 use leveldb_mcpe_sys::*;
+pub use leveldb_mcpe_sys::Compression;
 
 use libc::size_t;
 use database::snapshots::Snapshot;
