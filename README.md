@@ -4,7 +4,21 @@ Almost-complete bindings for leveldb for Rust.
 
 ***This fork is exist to fit [leveldb-mcpe-sys](https://github.com/Fancyflame/leveldb-mcpe-sys)***
 
-[Documentation](https://docs.rs/leveldb/0.8.4/leveldb/)
+## Documentation
+
+[Original documentation](https://docs.rs/leveldb/0.8.4/leveldb/)
+
+**changes**
+```rust
+// leveldb_mcpe
+pub enum Compression{
+    No,
+    Snappy,
+    Zlib,
+    Zstd,
+    ZlibRaw
+}
+```
 
 ## Rust version policy
 
