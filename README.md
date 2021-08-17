@@ -1,9 +1,8 @@
 # Rust leveldb bindings
 
 Almost-complete bindings for leveldb for Rust.
-***This fork is exist to fit 
 
-[leveldb-mcpe-sys](https://github.com/Fancyflame/leveldb-mcpe-sys)***
+***This fork is exist to fit [leveldb-mcpe-sys](https://github.com/Fancyflame/leveldb-mcpe-sys)***
 
 [Documentation](https://docs.rs/leveldb/0.8.4/leveldb/)
 
