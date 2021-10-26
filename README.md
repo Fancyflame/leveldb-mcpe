@@ -1,6 +1,6 @@
 # Rust leveldb bindings
 
-Almost-complete bindings for leveldb for Rust. The repository is cloned from [skade/leveldb](https://github.com/skade/leveldb)
+Almost-complete bindings for leveldb for Rust. The repository is based on [skade/leveldb](https://github.com/skade/leveldb)
 
 ***This repository is exist to fit [leveldb-mcpe-sys](https://github.com/Fancyflame/leveldb-mcpe-sys)***
 
