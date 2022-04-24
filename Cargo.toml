@@ -22,8 +22,7 @@ db-key = "0.1"
 libc = "0"
 
 [dependencies.leveldb-mcpe-sys]
-path = "../leveldb-mcpe-sys" #暂时这样
-version = "*" 
+git = "https://github.com/Fancyflame/leveldb-mcpe-sys"
 
 [dev-dependencies]
 tempdir = "0.3.4"
